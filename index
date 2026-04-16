@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dim MBOLOKALA - Portfolio</title>
+</head>
+<body>
+<header>
+    <h1>Dim MBOLOKALA</h1>
+    <nav>
+        <li><a href="#"></a>A propos</li>
+        <li><a href="#"></a>Projets</li>
+        <li><a href="#"></a>Contact</li>
+    </nav>
+</header>
+<main>
+    <div>
+        <div>
+            <div>
+                <img src="image/image-dim.jpg" alt="Dim MBOLOKALA">
+            </div>
+        </div>
+        <div>
+            <div>
+                <h2>Bonjour, je suis Dim MBOLOKALA</h2>
+                <h3> Developpeur Fullstack</h3>
+            </div>
+            <p>Je conçois des sites et applications web rapides, modernes et centrés utilisateur, 
+                en transformant vos idées en solutions performantes qui attirent, engagent 
+                et génèrent des résultats concrets.
+            </p>
+            <div>
+                <button>Voir mes projets</button>
+            </div>
+        </div>
+    </div>
+</main>
+<footer>
+    <div>
+        <div>
+            <h4>Téléphone</h4>
+            <a href="">+243898098952</a>
+        </div>
+        <div>
+            <h4>Suivez-moi</h4>
+            <div>
+                <a href=""></a>
+                <a href=""></a>
+                <a href=""></a>
+            </div>
+        </div>
+        <div>
+            <p>© 2026 by Dim MBOLOKALA</p>
+        </div>
+    </div>
+
+</footer> 
+</body>
+</html>

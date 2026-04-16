@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dim MBOLOKALA - Portfolio</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'brand-gray-dark': '#707070',
+                        'brand-gray-light': '#D9D9D9',
+                        'brand-beige': '#EBE7C9',
+                        'brand-red': '#EF231C',
+                        'brand-purple': '#5E3BEE',
+                    },
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                    },
+                }
+            }
+        }
+    </script>
+    <style>
+         @keyframes fadeInUp {
+            from { opacity: 0; transform: translateY(20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+        @keyframes slideInLeft {
+            from { opacity: 0; transform: translateX(-30px); }
+            to { opacity: 1; transform: translateX(0); }
+        }
+        .animate-fade-up { animation: fadeInUp 0.8s ease-out forwards; }
+        .animate-slide-left { animation: slideInLeft 0.8s ease-out forwards; }
+        .delay-100 { animation-delay: 0.1s; }
+        .delay-200 { animation-delay: 0.2s; }
+    </style>
+</head>
+<body class="bg-brand-gray-light text-black antialiased font-sans flex flex-col min-h-screen" >
+    <header class="bg-brand-gray-dark text-white px-6 py-6 md:px-12 flex flex-col md:flex-row justify-between items-center sticky top-0 z-50 shadow-lg">
+        <h1 class="text-2xl md:text-3xl font-bold tracking-tight animate-slide-left">Dim MBOLOKALA</h1>
+        <nav class="mt-4 md:mt-0">
+            <ul class="flex space-x-6 md:space-x-12 text-xl font-medium">
+                <li><a href="#" class="hover:text-gray-300 transition duration-300"></a>A propos</li>
+                <li><a href="#" class="hover:text-gray-300 transition duration-300"></a>Projets</li>
+                <li><a href="#" class="hover:text-gray-300 transition duration-300"></a>Contact</li>
+            </ul>
+        </nav>
+    </header>
+    <main class="flex-grow flex items-center justify-center py-12 px-6 md:px-12">
+        <div class="max-w-6xl w-full flex flex-col md:flex-row items-center gap-12 lg:gap-24">
+            <div class="relative w-64 h-64 md:w-80 md:h-80 lg:w-[450px] lg:h-[450px] animate-fade-up>
+                <div class="w-full h-full rounded-full border-8 border-brand-purple overflow-hidden shadow-2xl transform hover:scale-105 transition duration-500">
+                    <img src="image/image-dim.jpg" alt="Dim MBOLOKALA" class="w-full h-full object-cover">
+                </div>
+            </div>
+            <div>
+                <div>
+                    <h2>Bonjour, je suis Dim MBOLOKALA</h2>
+                    <h3> Developpeur Fullstack</h3>
+                </div>
+                <p>Je conçois des sites et applications web rapides, modernes et centrés utilisateur, 
+                en transformant vos idées en solutions performantes qui attirent, engagent 
+                et génèrent des résultats concrets.
+                </p>
+                <div>
+                    <button>Voir mes projets</button>
+                </div>
+            </div>
+        </div>
+    </main >
+    <footer>
+        <div>
+            <div>
+                <h4>Téléphone</h4>
+                <a href="">+243898098952</a>
+            </div>
+            <div>
+                <h4>Suivez-moi</h4>
+                <div>
+                    <a href=""></a>
+                    <a href=""></a>
+                    <a href=""></a>
+                </div>
+            </div>
+            <div>
+                <p>© 2026 by Dim MBOLOKALA</p>
+            </div>
+        </div>
+
+    </footer> 
+</body>
+</html>
