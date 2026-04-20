@@ -7,7 +7,6 @@
     <script src="https://cdn.tailwindcss.com"></script>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    
     <script>
         tailwind.config = {
             theme: {
@@ -49,43 +48,56 @@
             <ul class="flex space-x-6 md:space-x-12 text-xl font-medium">
                 <li><a href="apropos.html" class="hover:text-gray-300 transition duration-300">A propos</a></li>
                 <li><a href="projets.html" class="hover:text-gray-300 transition duration-300">Projets</a></li>
-                <li><a href="contact.html" class="hover:text-gray-300 transition duration-300">Contact</a></li>
+                <li><a href="index.html" class="hover:text-gray-300 transition duration-300">Contact</a></li>
             </ul>
         </nav>
     </header>
-    <main class="flex-grow flex items-center justify-center py-12 px-6 md:px-12">
-        <div class="max-w-6xl w-full flex flex-col md:flex-row items-center gap-12 lg:gap-24">
-            <div class="relative w-64 h-64 md:w-80 md:h-80 lg:w-[450px] lg:h-[450px] animate-fade-up">
-                <div class="w-full h-full rounded-full border-8 border-brand-purple overflow-hidden shadow-2xl transform hover:scale-105 transition duration-500">
-                    <img src="image/image-dim.jpg" alt="Dim MBOLOKALA" class="w-full h-full object-cover">
-                </div>
-            </div>
-            <div class="flex-1 text-center md:text-left space-y-6">
-                <div class="animate-fade-up delay-100">
-                    <h2 class="text-3xl md:text-4xl lg:text-5xl font-extrabold leading-tight">
-                        Bonjour, je suis Dim MBOLOKALA
-                    </h2>
-                    <h3 class="text-2xl md:text-3xl font-bold mt-2">
-                        Developpeur Fullstack
-                    </h3>
-                </div>
-                
-                <p class="text-lg md:text-xl text-gray-800 leading-relaxed max-w-2xl animate-fade-up delay-200">
-                    Je conçois des sites et applications web rapides, modernes et centrés utilisateur, 
-                    en transformant vos idées en solutions performantes qui attirent, engagent 
-                    et génèrent des résultats concrets.
-                </p>
-
-                <div class="pt-4 animate-fade-up delay-200">
-                    <a href="projets.html" class="bg-brand-red text-white text-xl font-bold py-3 px-10 rounded-lg shadow-md hover:bg-red-700 hover:-translate-y-1 transition-all duration-300">
-                        Voir mes projets
-                    </a>
-                </div>
-            </div>
+    <main class="max-w-6xl mx-auto px-6 py-12">
+        <h2 class="text-3xl font-bold mb-12">Contact</h2>
+    <div class="grid md:grid-cols-2 gap-12">
+      <div class="space-y-6">
+        <div>
+          <h3 class="font-semibold text-lg">Téléphone</h3>
+          <a href="tel:+243898098952" class="mt-2 text-gray-700">+243898098952</a>
         </div>
+        <div>
+          <h3 class="font-semibold text-lg">Email</h3>
+          <a href="mailto:dimmbolokala@gmail.com" class="mt-2 text-gray-700">dimmbolokala@gmail.com</a>
+        </div>
+      </div>
+      <form class="space-y-6">
+        <div class="grid sm:grid-cols-2 gap-6">
+          <div>
+            <label class="block mb-2">Nom</label>
+            <input type="text" class="w-full border border-gray-400 p-2">
+          </div>
+          <div>
+            <label class="block mb-2">Postnom</label>
+            <input type="text" class="w-full border border-gray-400 p-2">
+          </div>
+        </div>
+        <div class="grid sm:grid-cols-2 gap-6">
+          <div>
+            <label class="block mb-2">Email</label>
+            <input type="email" class="w-full border border-gray-400 p-2">
+          </div>
+          <div>
+            <label class="block mb-2">Objet</label>
+            <input type="text" class="w-full border border-gray-400 p-2">
+          </div>
+        </div>
+        <div>
+          <label class="block mb-2">Message</label>
+          <textarea rows="5" class="w-full border border-gray-400 p-2"></textarea>
+        </div>
+        <button class="bg-gray-600 text-white px-6 py-2 hover:bg-gray-700">
+          Envoyer
+        </button>
+      </form>
+    </div>
     </main>
     <footer class="bg-brand-beige py-12 px-6 md:px-12">
-        <div class="max-w-7xl mx-auto grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8 text-center md:text-left">
+         <div class="max-w-7xl mx-auto grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8 text-center md:text-left">
             <div>
                 <h4 class="font-extrabold text-lg mb-2">Téléphone</h4>
                 <a href="tel:+243898098952" class="text-gray-700 font-semibold">+243898098952</a>
@@ -109,6 +121,5 @@
             </div>
         </div>
     </footer>
-    
 </body>
 </html>
